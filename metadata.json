@@ -1,0 +1,5 @@
+{
+  "name": "Image Format Converter",
+  "description": "A web application to convert HEIF (.heic, .heif) and WebP (.webp) images to PNG format. Supports drag-and-drop, multiple file selection, and automatic download of converted images. ZIP files containing images are also supported.",
+  "requestFramePermissions": []
+}
