@@ -1,5 +1,5 @@
 
-import { getFileExtension } from './utilities';
+import { getFileExtension } from './utilities.ts';
 
 export const convertToPng = async (file: File): Promise<Blob> => {
   const extension = getFileExtension(file.name);
@@ -57,4 +57,3 @@ export const convertToPng = async (file: File): Promise<Blob> => {
     throw new Error(`Unsupported file type for conversion: ${extension}`);
   }
 };
-    

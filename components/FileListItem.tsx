@@ -1,7 +1,8 @@
+
 import React from 'react';
-import { FileJob } from '../types';
-import Spinner from './Spinner';
-import { CheckCircleIcon, XCircleIcon, DocumentIcon, ArchiveBoxIcon } from './Icons'; // Removed ArrowDownTrayIcon as it's not used here
+import { FileJob } from '../types.ts';
+import Spinner from './Spinner.tsx';
+import { CheckCircleIcon, XCircleIcon, DocumentIcon, ArchiveBoxIcon } from './Icons.tsx'; // Removed ArrowDownTrayIcon as it's not used here
 
 interface FileListItemProps {
   job: FileJob;

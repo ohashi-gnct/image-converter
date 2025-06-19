@@ -1,6 +1,6 @@
 
-import { IMAGE_EXTENSIONS } from '../types';
-import { getFileExtension } from './utilities';
+import { IMAGE_EXTENSIONS } from '../types.ts';
+import { getFileExtension } from './utilities.ts';
 
 export const extractImagesFromZip = async (zipFile: File): Promise<File[]> => {
   if (!window.JSZip) {
@@ -34,4 +34,3 @@ export const extractImagesFromZip = async (zipFile: File): Promise<File[]> => {
   await Promise.all(filePromises);
   return imageFiles;
 };
-    

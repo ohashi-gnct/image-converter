@@ -1,12 +1,13 @@
+
 import React, { useState, useEffect, useCallback } from 'react';
-import FileDropzone from './components/FileDropzone';
-import FileListItem from './components/FileListItem';
-import FullScreenLoader from './components/FullScreenLoader';
-import { FileJob, FileJobStatus, ALLOWED_EXTENSIONS, IMAGE_EXTENSIONS } from './types';
-import { convertToPng } from './services/imageConverter';
-import { extractImagesFromZip } from './services/zipHandler';
-import { getFileNameWithoutExtension, getFileExtension, downloadBlob } from './services/utilities';
-// import { ArrowDownTrayIcon } from './components/Icons'; // Not used directly in App.tsx template
+import FileDropzone from './components/FileDropzone.tsx';
+import FileListItem from './components/FileListItem.tsx';
+import FullScreenLoader from './components/FullScreenLoader.tsx';
+import { FileJob, FileJobStatus, ALLOWED_EXTENSIONS, IMAGE_EXTENSIONS } from './types.ts';
+import { convertToPng } from './services/imageConverter.ts';
+import { extractImagesFromZip } from './services/zipHandler.ts';
+import { getFileNameWithoutExtension, getFileExtension, downloadBlob } from './services/utilities.ts';
+// import { ArrowDownTrayIcon } from './components/Icons.tsx'; // Not used directly in App.tsx template
 
 const App: React.FC = () => {
   const [fileJobs, setFileJobs] = useState<FileJob[]>([]);

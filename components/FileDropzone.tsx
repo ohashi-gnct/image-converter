@@ -1,6 +1,7 @@
+
 import React, { useCallback, useState } from 'react';
-import { DocumentArrowUpIcon } from './Icons';
-import { ALLOWED_EXTENSIONS } from '../types';
+import { DocumentArrowUpIcon } from './Icons.tsx';
+import { ALLOWED_EXTENSIONS } from '../types.ts';
 
 interface FileDropzoneProps {
   onFilesSelected: (files: File[]) => void;
